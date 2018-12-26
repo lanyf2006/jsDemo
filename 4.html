@@ -9,6 +9,37 @@
     <meta name="description" content="">
 </head>
 <body>
+<script>
+    // 基本类型
+    var num1 = 5;
+    var num2 = num1;
+    console.log(num2);
+    // 引用类型
+    var person = new Object();
+    person.name = 'lanyf';
+    var girls = person;
+    console.log(girls.name);
 
+    //检测类型
+    var n = 1;
+    var s = 'lanyf';
+    var b = true;
+    var u;
+    var n = null;
+    var o = new Object();
+    var a = new Array();
+
+    console.log(typeof n);
+    console.log(typeof s);
+    console.log(typeof b);
+    console.log(typeof u);
+    console.log(typeof n);
+    console.log(typeof o);
+
+    console.log(n instanceof Object);
+    console.log(o instanceof Object);
+    console.log(a instanceof Array);
+    console.log(a instanceof RegExp);
+</script>
 </body>
 </html>
